@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShamsPortfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" 
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/style.css">
+    <script>
+        function toggleSteps() {
+            var steps = document.querySelectorAll('.step');
+            steps.forEach(step => {
+                if (step.style.display === 'none') {
+                    step.style.display = 'block';
+                } else {
+                    step.style.display = 'none';
+                }
+            });
+        }
+    </script>
+</head>
+<body>
+    <header id="header-page2">
+        <div class="overlay">
+            <div class="div-logo">
+                <a class="logo" href="../index.html"><img src="images/white icon.png" alt="logo"></a>
+            </div>
+            <ul class="main-nav">
+                <li><a href="#About-me">About Me</a></li>
+                <li><a href="">My Projects</a></li>
+                <li><a href="#footer">Contacts</a></li>
+            </ul>
+            <br>
+        </div>
+    </header>
+    <div class="assignment-page" id="assignment-page">
+
+        <h2>I created a fully functioning blog using Node.js, Express & MongoDB.</h2>
+
+        <p>In this assignment you can add and edit posts by using log-in system.
+            Log in using the provided credentials.
+            Username: "shams"
+            Password: "12345"</p>
+        <div class="image-row">
+            <img src="images/(1).png" alt="blog">
+            <img src="images/blog2.png" alt="blog">
+        </div>
+        <p>I was able to connect the database with using Mongodb and Here's how it works: if the user wants to search for a single word within the articles.</p>
+        <img class="blog3" src="images/blog3.png" alt="blog">
+        <video controls>
+            <source id="nodejsvid" src="images/Nodejs_Blog_-1.mp4" type="video/mp4">
+        </video> 
+
+
+
+        <!-- the step by step explanation -->
+         <p> </p>
+        <button class="common-btn" onclick="toggleSteps()">  More explaination how to add, edit, or delete the article
+            <i class="fa fa-long-arrow-right arrow1" aria-hidden="true"></i></button>
+
+        <!-- Steps -->
+        <div class="step" style="display: none;">
+            <p> To add an article with the title "Last Article"</p>
+            <p>First you need to login.</p>
+            <video controls>
+                <source src="images/step1.mp4" type="video/mp4">
+            </video>
+        </div>
+
+        <div class="step" style="display: none;">
+            <p>Second, you click edit, delete, or add to add an article.</p>
+            <video controls>
+                <source src="images/step2.mp4" type="video/mp4">
+            </video>
+        </div>
+
+        <div class="step" style="display: none;">
+            <p>Third, here's how it's connected to the database.</p>
+            <video controls>
+                <source src="images/step33mp4" type="video/mp4">
+            </video>
+        </div>
+
+        <div class="step" style="display: none;">
+            <p>Ultimately, the article displays on the home page with its respective publish time.</p>
+            <img src="images/step4.png" alt="">
+        </div>
+
+
+        <p>Related topics
+            <br>If you'd like to see the other coding assignments that I personally created last semester, you can find them at the following GitLab link.
+        </p>
+        <a href="https://git.fhict.nl/I494971/shamsportfolios3/-/wikis/FED"><button class="common-btn">  GitLab link
+            <i class="fa fa-long-arrow-right arrow1" aria-hidden="true"></i></button></a>
+    </div>
+</body>
+</html>
